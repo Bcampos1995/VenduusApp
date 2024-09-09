@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VenduusApp.IncluirPedidoPage">
+    <StackLayout VerticalOptions="Start" Padding="10">
+        <Image Source="logo_venduus.png" HeightRequest="100" WidthRequest="100" />
+        <Label Text=" Incluir Pedido" 
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+        <Entry Placeholder="Empresa" x:Name="empresaEntry" />
+        <Entry Placeholder="Cliente" x:Name="clienteEntry" />
+        <Entry Placeholder="Transportadora" x:Name="transportadoraEntry" />
+        <Entry Placeholder="Obs." x:Name="obsEntry" />
+        <Entry Placeholder="Condição de Pagamento" x:Name="condPagtoEntry" />
+        <Label Text="" />
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Button Text="Salvar" Clicked="OnSalvarButtonClicked" Margin="0,0,10,0" />
+            <Button Text="Cancelar" Clicked="OnCancelarButtonClicked" Margin="0,0,10,0" />
+        </HorizontalStackLayout>
+    </StackLayout>
+</ContentPage>

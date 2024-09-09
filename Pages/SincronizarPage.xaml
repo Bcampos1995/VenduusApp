@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VenduusApp.SincronizarPage">
+    <StackLayout VerticalOptions="Start" Padding="10">
+        <Image Source="logo_venduus.png" HeightRequest="100" WidthRequest="100" />
+        <Label Text="Sincronizar" 
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+        <Label Text="" />
+        <Label Text="EMPRESA: Empresa 1" />
+        <Label Text="PRODUTOS: Produto A, Produto B" />
+        <Label Text="CLIENTES: Cliente X, Cliente Y" />
+        <Label Text="COND.PAGTO: Condição 1, Condição 2" />
+        <Label Text="TRANSPORTADORA: Transportadora 1" />
+        <Label Text="" />
+        <Button Text="Sincronizar" Clicked="OnSyncButtonClicked" />
+    </StackLayout>
+</ContentPage>

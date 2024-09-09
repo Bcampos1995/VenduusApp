@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="VenduusApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:VenduusApp"
+    Shell.FlyoutBehavior="Disabled"
+    Title="VenduusApp">
+
+    <TabBar>
+        <ShellContent Title="Principal" Icon="home.png" ContentTemplate="{DataTemplate local:EmpresaPage}" />
+        <ShellContent Title="Pedidos" Icon="pedidos.png" ContentTemplate="{DataTemplate local:PedidosPage}" />
+        <ShellContent Title="Sincronizar" Icon="sincronizar.png" ContentTemplate="{DataTemplate local:SincronizarPage}" />
+    </TabBar>
+
+</Shell>
